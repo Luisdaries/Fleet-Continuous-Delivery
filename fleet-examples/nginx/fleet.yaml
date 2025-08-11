@@ -1,4 +1,4 @@
 defaultNamespace: nginx-fleet
 targetCustomizations:
-  - name: default
+  - name: all
     clusterSelector: {}
