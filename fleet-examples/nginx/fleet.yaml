@@ -1,4 +1,5 @@
-defaultNamespace: nginx-fleet
-targetCustomizations:
-  - name: all
-    clusterSelector: {}
+defaultNamespace: nginx-app
+
+labels:
+  app: nginx
+  managed-by: fleet
