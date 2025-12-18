@@ -13,6 +13,21 @@ spec:
       labels:
         app: nginx
     spec:
+
+      # 🔹 INIT CONTAINER (CLAVE)
+      initContainers:
+        - name: init-nginx-content
+          image: busybox:1.36
+          command:
+            - sh
+            - -c
+            - |
+              echo "<h1>NGINX + Fleet funcionando correctamente</h1>" \
+              > /usr/share/nginx/html/index.html
+          volumeMounts:
+            - name: nginx-storage
+              mountPath: /usr/share/nginx/html
+
       containers:
         - name: nginx
           image: nginx:latest
