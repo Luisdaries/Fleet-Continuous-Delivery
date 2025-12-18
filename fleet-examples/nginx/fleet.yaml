@@ -1,5 +1,8 @@
 defaultNamespace: nginx-app
 
 targetCustomizations:
-- name: all
-  clusterSelector: {}
+- name: dev
+  namespace: nginx-app
+  clusterSelector:
+    matchLabels:
+      environment: dev
