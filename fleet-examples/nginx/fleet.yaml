@@ -1,6 +1,0 @@
-targetCustomizations:
-- name: dev
-  targetNamespace: nginx-app
-  clusterSelector:
-    matchLabels:
-      environment: dev
