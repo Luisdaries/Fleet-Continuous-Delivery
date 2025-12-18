@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: nginx-dev.devops.michoacan.gob.mx
+    - host: nginx-dev2.devops.michoacan.gob.mx
       http:
         paths:
           - path: /
