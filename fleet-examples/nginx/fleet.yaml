@@ -1,10 +1,5 @@
 defaultNamespace: nginx-app
 
-labels:
-  app: nginx
-  managed-by: fleet
-  meta.helm.sh/release-name: Helm
-
 targetCustomizations:
 - name: dev
   clusterSelector:
